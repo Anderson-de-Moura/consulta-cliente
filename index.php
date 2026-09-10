@@ -4,7 +4,12 @@ declare(strict_types=1);
 require_once __DIR__ . '/config.php';
 
 if (isset($_SESSION['id_usuario'])) {
-    header('Location: ' . BASE_URL . '/cliente/index.php');
+    $destination = match ($_SESSION['nivel_acesso'] ?? '') {
+        'master' => '/master/index.php',
+        'empresa' => '/empresa/index.php',
+        default => '/operador/index.php',
+    };
+    header('Location: ' . BASE_URL . $destination);
     exit;
 }
 

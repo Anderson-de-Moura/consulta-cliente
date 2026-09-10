@@ -1,0 +1,5 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Novo operador - DataConsult B2B</title><link rel="stylesheet" href="<?= htmlspecialchars(BASE_URL, ENT_QUOTES, 'UTF-8') ?>/assets/css/style.css"></head>
+<body class="page-shell"><main class="content-card"><a class="back-link" href="<?= BASE_URL ?>/empresa/index.php">Voltar para equipe</a><span class="eyebrow">Equipe da empresa</span><h1>Novo operador</h1><form class="form-stack" method="post" action="<?= BASE_URL ?>/empresa/criar_usuario.php"><label>Nome completo<input type="text" name="nome" required></label><label>E-mail<input type="email" name="email" required></label><label>Senha<input type="password" name="senha" required></label><button class="button button-primary" type="submit">Criar acesso</button></form></main></body>
+</html>

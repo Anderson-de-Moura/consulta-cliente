@@ -1,0 +1,15 @@
+# Configuração local e credenciais de ambiente
+.env
+.env.*
+!.env.example
+
+# Arquivos gerados localmente
+*.log
+*.tmp
+*.bak
+
+# IDE e sistema operacional
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini
