@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - DataConsult B2B</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="page-shell">
+    <main class="auth-card">
+        <a class="brand brand-dark" href="index.html">DataConsult B2B</a>
+        <h1>Acesso ao sistema</h1>
+        <form class="form-stack" method="post" action="http://127.0.0.1:8000/login.php">
+            <label>
+                E-mail
+                <input type="email" name="email" autocomplete="email" required>
+            </label>
+            <label>
+                Senha
+                <input type="password" name="senha" autocomplete="current-password" required>
+            </label>
+            <button class="button button-primary" type="submit">Entrar</button>
+        </form>
+    </main>
+</body>
+
+</html>
